@@ -9,7 +9,7 @@ import org.json.JSONObject;
 
 public class Order {
 
-	public static String begin_url="http://api.showstart.com/third/bddc/order_list.json?pageNo=1&isSync=1&tp_source=bddc&tp_qtime=";
+	public static String begin_url="xxxxx";
 
 	public static void jsonToObj_Order(String jsonStr,BufferedWriter out) throws Exception {   
 	     JSONObject jsonObject = new JSONObject(jsonStr);  
@@ -46,8 +46,7 @@ public class Order {
 		 for(int i=1;i<=PageNum;i++){
 			 //long t1=System.currentTimeMillis();
 			 //String tp_sign=getMD5(tp_token+Long.toString(t1)+"taihemusic");
-		     String url="http://api.showstart.com/third/bddc/order_list.json?pageNo="+i+"&isSync=1&tp_source=bddc&tp_qtime="+time+"&tp_sign="+sign;
-		     System.out.println(url);
+		     String url="xxxxx";
 		     String jsonObj=API.getJsonString(url);
 		     order.jsonToObj_Order(jsonObj,out_order);
 		 }  
