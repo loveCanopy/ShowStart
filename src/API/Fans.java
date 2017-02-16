@@ -16,7 +16,7 @@ public class Fans {
 	//存放艺人Id的列表
     public static Set<String> artistList=new HashSet<String>();
 	//首先拿到所有的艺人ID
-	public static String begin_url="http://api.showstart.com/third/bddc/performer_list.json?pageNo=1&isSync=0&tp_source=bddc&tp_qtime=";
+	public static String begin_url="xxxxx";
 	
     //解析JSON,得到艺人id的集合
 	 public static void jsonToObj_Artist_List(String jsonStr) throws Exception {   
@@ -48,7 +48,7 @@ public class Fans {
 		 for(int i=1;i<=PageNum;i++){
 			 //long t1=System.currentTimeMillis();
 			 //String tp_sign=getMD5(tp_token+Long.toString(t1)+"taihemusic");
-		     String url="http://api.showstart.com/third/bddc/performer_list.json?pageNo="+i+"&isSync=0&tp_source=bddc&tp_qtime="+time+"&tp_sign="+sign;
+		     String url="xxxx";
 		     //System.out.println(url);
 		     String jsonObj=API.getJsonString(url);
 		     fans.jsonToObj_Artist_List(jsonObj);
@@ -64,7 +64,8 @@ public class Fans {
 		 BufferedWriter out_fans=new BufferedWriter(new FileWriter(file_fans,true));
 		 int Fans_pageNum=0;
 		for (String performId:set){
-			String begin_url= "http://api.showstart.com/third/bddc/fans_list.json?pageNo=1&isSync=1&performerId="+performId+"&tp_source=bddc&tp_qtime="+time+"&tp_sign="+sign;
+			String begin_url= "
+				xxxx";
 			//System.out.println(begin_url);
 			String jsonString_NEW = API.getJsonString(begin_url);
 			 JSONObject jsonObject_NEW = new JSONObject(jsonString_NEW);  
@@ -74,7 +75,7 @@ public class Fans {
 			String begin_fans_jsonObj=API.getJsonString(begin_url); 
 		     Fans_pageNum=API.getPageNum(begin_fans_jsonObj)/200+1;
 			    for(int i=1;i<=Fans_pageNum;i++){
-					String url="http://api.showstart.com/third/bddc/fans_list.json?pageNo="+i+"&isSync=1&performerId="+performId+"&tp_source=bddc&tp_qtime="+time+"&tp_sign="+sign;
+					String url="xxxx";
 					System.out.println(url);
 					 String jsonString = API.getJsonString(url);
 					 JSONObject jsonObject = new JSONObject(jsonString);  
