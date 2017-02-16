@@ -8,9 +8,9 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 //艺人
 public class Artist {
-	
-	public static String begin_url="http://api.showstart.com/third/bddc/performer_list.json?pageNo=1&isSync=1&tp_source=bddc&tp_qtime=";
-	    //解析JSON
+		
+public static String begin_url="XXXXX";	
+    //解析JSON
 		 public static void jsonToObj_Artist(String jsonStr,BufferedWriter out) throws Exception {   
 		     JSONObject jsonObject = new JSONObject(jsonStr);  
 		     String fatherName = jsonObject.getString("result");  
@@ -40,7 +40,7 @@ public class Artist {
 			 for(int i=1;i<=PageNum;i++){
 				 //long t1=System.currentTimeMillis();
 				 //String tp_sign=getMD5(tp_token+Long.toString(t1)+"taihemusic");
-			     String url="http://api.showstart.com/third/bddc/performer_list.json?pageNo="+i+"&isSync=1&tp_source=bddc&tp_qtime="+time+"&tp_sign="+sign;
+			     String url="xxxxx“;
 			     System.out.println(url);
 			     String jsonObj=API.getJsonString(url);
 			     artist.jsonToObj_Artist(jsonObj,out_artist);

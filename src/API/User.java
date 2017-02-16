@@ -31,7 +31,7 @@ import Model.Tool;
 //用户
 public class User {
 
-	public static String begin_url="http://api.showstart.com/third/bddc/user_list.json?pageNo=1&isSync=1&tp_source=bddc&tp_qtime=";
+	public static String begin_url="xxxxx";
 	
 	//解析JSON
 	 public static void jsonToObj_User(String jsonStr,BufferedWriter out) throws Exception {   
@@ -69,7 +69,7 @@ public class User {
 		 for(int i=1;i<=PageNum;i++){
 			 //long t1=System.currentTimeMillis();
 			 //String tp_sign=getMD5(tp_token+Long.toString(t1)+"taihemusic");
-		     String url="http://api.showstart.com/third/bddc/user_list.json?pageNo="+i+"&isSync=1&tp_source=bddc&tp_qtime="+time+"&tp_sign="+sign;
+		     String url="xxxxx";
 		     System.out.println(url);
 		     String jsonObj=API.getJsonString(url);
 		     user.jsonToObj_User(jsonObj,out_user);

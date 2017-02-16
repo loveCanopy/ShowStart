@@ -13,7 +13,7 @@ import org.json.JSONObject;
 //演出列表
 public class Showlist {
 	
-	public static String begin_url="http://api.showstart.com/third/bddc/show_list.json?pageNo=1&isSync=1&tp_source=bddc&tp_qtime=";
+	public static String begin_url="xxxxx";
 	 //解析JSON
 	 public static void jsonToObj_ShowList(String jsonStr,BufferedWriter out) throws Exception {   
 	     JSONObject jsonObject = new JSONObject(jsonStr);  
@@ -72,7 +72,7 @@ public class Showlist {
 		 for(int i=1;i<=PageNum;i++){
 			 //long t1=System.currentTimeMillis();
 			 //String tp_sign=getMD5(tp_token+Long.toString(t1)+"taihemusic");
-		     String url="http://api.showstart.com/third/bddc/show_list.json?pageNo="+i+"&isSync=1&tp_source=bddc&tp_qtime="+time+"&tp_sign="+sign;
+		     String url="xxxxx";
 		     System.out.println(url);
 		     String jsonObj=API.getJsonString(url);
 		     showlist.jsonToObj_ShowList(jsonObj, out_showlist);

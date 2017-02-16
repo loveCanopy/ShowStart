@@ -8,14 +8,14 @@ import java.util.Set;
 //执行类
 public class Main {
 
-	 static String tp_source="bddc";
-	 static String tp_token="xEUfaZqcSkwfZHojhXPmSRdsGo8josezXtJuWI0lWwkV52tS-B375zRhqBMWKMiG-Iek4SxVgXtOUKosjzRmqb2aLHwybiqPFfx12rHGRaAEAUwe";
+	 static String tp_source="xxx";
+	 static String tp_token="xxxx";
 	 //static String tp_token='123456789';
 	 static long begin_t1=System.currentTimeMillis();
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		 
-		 String begin_tp_sign=API.getMD5(tp_token+Long.toString(begin_t1)+"taihemusic");
+		 String begin_tp_sign=API.getMD5(tp_token+Long.toString(begin_t1)+"xxx");
 		 
 		//Order(args, begin_tp_sign);
 		 
