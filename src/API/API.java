@@ -53,8 +53,8 @@ public class API {
  
  //获取JSON
  public static String getJsonString(String urlPath) throws Exception {  
-	 //配置代理服务器
-	 Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("10.16.87.254", 8080));
+	 //配置代理服务器	
+ Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("xxxxx", xxxx));
      URL url = new URL(urlPath);  
      HttpURLConnection connection = (HttpURLConnection) url.openConnection(proxy);
      //HttpURLConnection connection = (HttpURLConnection) url.openConnection();
